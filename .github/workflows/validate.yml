@@ -1,0 +1,43 @@
+name: Validate theme
+
+on:
+  push:
+  pull_request:
+
+permissions: {}
+
+jobs:
+  yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --disable-pip-version-check pyyaml
+      - name: Validate theme structure
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          files = list(Path("themes").glob("*.yaml"))
+          assert len(files) == 1, "HACS theme repositories must contain one theme YAML file"
+          data = yaml.safe_load(files[0].read_text())
+          assert list(data) == ["Catthode"]
+          theme = data["Catthode"]
+          required = {
+              "primary-color", "accent-color", "primary-background-color",
+              "secondary-background-color", "primary-text-color",
+              "secondary-text-color", "card-background-color", "error-color"
+          }
+          assert not (required - set(theme))
+          print("Home Assistant theme structure passed")
+          PY
+  hacs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hacs/action@main
+        with:
+          category: theme

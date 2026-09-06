@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Catthode Home Assistant preview</title>
+  <desc id="desc">A Home Assistant dashboard in black with warm device cards.</desc>
+  <rect width="1200" height="700" rx="22" fill="#000"/>
+  <rect x="20" y="20" width="210" height="660" rx="18" fill="#080808"/>
+  <text x="48" y="72" fill="#ff9e3b" font-family="system-ui" font-size="25" font-weight="700">⌂  Home</text>
+  <text x="48" y="132" fill="#fae2c8" font-family="system-ui" font-size="18">Overview</text>
+  <text x="48" y="178" fill="#b3b3b3" font-family="system-ui" font-size="18">Energy</text>
+  <text x="48" y="224" fill="#b3b3b3" font-family="system-ui" font-size="18">History</text>
+  <text x="48" y="270" fill="#b3b3b3" font-family="system-ui" font-size="18">Settings</text>
+  <text x="274" y="72" fill="#fff" font-family="system-ui" font-size="30" font-weight="700">Good evening</text>
+  <text x="274" y="104" fill="#b3b3b3" font-family="system-ui" font-size="16">Everything looks warm and quiet.</text>
+  <g font-family="system-ui">
+    <rect x="274" y="140" width="270" height="180" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <circle cx="320" cy="188" r="24" fill="#ff9e3b"/><text x="312" y="197" fill="#000" font-size="24">●</text>
+    <text x="354" y="188" fill="#fff" font-size="20" font-weight="700">Living room</text><text x="306" y="268" fill="#ffb86c" font-size="42">22°</text>
+    <rect x="570" y="140" width="270" height="180" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <circle cx="616" cy="188" r="24" fill="#9cd9e6"/><text x="650" y="188" fill="#fff" font-size="20" font-weight="700">Air quality</text><text x="602" y="268" fill="#aee6d6" font-size="42">Good</text>
+    <rect x="866" y="140" width="270" height="180" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <circle cx="912" cy="188" r="24" fill="#b9d665"/><text x="946" y="188" fill="#fff" font-size="20" font-weight="700">Power</text><text x="898" y="268" fill="#b9d665" font-size="42">1.4 kW</text>
+    <rect x="274" y="346" width="566" height="286" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <text x="306" y="392" fill="#fff" font-size="20" font-weight="700">Temperature</text>
+    <path d="M310 570C390 550 400 470 478 492S600 430 684 466s92-26 124-44" fill="none" stroke="#f08d49" stroke-width="5"/>
+    <path d="M310 584h498" stroke="#2d2d2d"/>
+    <rect x="866" y="346" width="270" height="132" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <text x="898" y="392" fill="#fff" font-size="20">Porch light</text><rect x="1018" y="416" width="80" height="36" rx="18" fill="#ff9e3b"/><circle cx="1080" cy="434" r="14" fill="#000"/>
+    <rect x="866" y="500" width="270" height="132" rx="16" fill="#141414" stroke="#2d2d2d"/>
+    <text x="898" y="548" fill="#fff" font-size="20">Doors</text><text x="898" y="590" fill="#b9d665" font-size="18">All secure</text>
+  </g>
+</svg>

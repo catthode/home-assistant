@@ -1,0 +1,5 @@
+{
+  "name": "Home Assistant",
+  "icon": "fa-solid fa-house-signal",
+  "description": "HACS-ready warm OLED theme for Home Assistant."
+}
