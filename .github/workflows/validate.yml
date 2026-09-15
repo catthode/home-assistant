@@ -2,7 +2,11 @@ name: Validate theme
 
 on:
   push:
+    branches: [main]
   pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * *"
   workflow_dispatch:
 
 permissions: {}
@@ -30,7 +34,8 @@ jobs:
           required = {
               "primary-color", "accent-color", "primary-background-color",
               "secondary-background-color", "primary-text-color",
-              "secondary-text-color", "card-background-color", "error-color"
+              "secondary-text-color", "card-background-color", "error-color",
+              "rgb-primary-color", "color-14", "graph-color-1", "graph-color-14"
           }
           assert not (required - set(theme))
           print("Home Assistant theme structure passed")

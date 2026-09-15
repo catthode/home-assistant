@@ -1,0 +1,11 @@
+# Local validation environments and Home Assistant runtime state
+.venv/
+.tmp/
+.ha-validation/
+__pycache__/
+*.py[cod]
+
+# macOS/editor noise
+.DS_Store
+.idea/
+.vscode/
