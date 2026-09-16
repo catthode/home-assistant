@@ -35,7 +35,11 @@ jobs:
               "primary-color", "accent-color", "primary-background-color",
               "secondary-background-color", "primary-text-color",
               "secondary-text-color", "card-background-color", "error-color",
-              "rgb-primary-color", "color-14", "graph-color-1", "graph-color-14"
+              "rgb-primary-color", "color-14", "graph-color-1", "graph-color-14",
+              "codemirror-string-2", "codemirror-attribute", "codemirror-property",
+              "codemirror-qualifier", "codemirror-type", "app-header-edit-background-color",
+              "app-header-edit-text-color", "mdc-ripple-color",
+              "mdc-linear-progress-buffer-color"
           }
           assert not (required - set(theme))
           print("Home Assistant theme structure passed")

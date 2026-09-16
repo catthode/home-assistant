@@ -226,6 +226,17 @@ Catthode:
   codemirror-number: "var(--catthode-clay)"
   codemirror-def: "var(--catthode-green)"
   codemirror-string: "var(--catthode-green)"
+  codemirror-string-2: "var(--catthode-green)"
   codemirror-comment: "var(--catthode-disabled)"
   codemirror-tag: "var(--catthode-red)"
   codemirror-meta: "var(--catthode-gold)"
+  codemirror-attribute: "var(--catthode-gold)"
+  codemirror-property: "var(--catthode-blue)"
+  codemirror-qualifier: "var(--catthode-clay)"
+  codemirror-type: "var(--catthode-gold)"
+
+  # Current Home Assistant header, ripple, and progress aliases
+  app-header-edit-background-color: "var(--catthode-surface)"
+  app-header-edit-text-color: "var(--catthode-fg)"
+  mdc-ripple-color: "var(--catthode-muted)"
+  mdc-linear-progress-buffer-color: "var(--catthode-selection)"
